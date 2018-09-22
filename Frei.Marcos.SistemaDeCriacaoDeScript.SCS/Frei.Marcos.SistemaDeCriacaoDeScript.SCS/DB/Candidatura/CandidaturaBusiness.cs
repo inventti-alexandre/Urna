@@ -8,5 +8,10 @@ namespace Frei.Marcos.SistemaDeCriacaoDeScript.SCS.DB.Candidatura
 {
     class CandidaturaBusiness
     {
+        public void Registrar(CandidaturaDTO dto)
+        {
+            CandidaturaDatabase db = new CandidaturaDatabase();
+            db.Registrar(dto);
+        }
     }
 }

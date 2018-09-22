@@ -42,9 +42,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.img = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.img = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -144,7 +144,7 @@
             // 
             this.txtCandidato.Font = new System.Drawing.Font("Footlight MT Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCandidato.Location = new System.Drawing.Point(282, 38);
-            this.txtCandidato.MaxLength = 150;
+            this.txtCandidato.MaxLength = 50;
             this.txtCandidato.Name = "txtCandidato";
             this.txtCandidato.Size = new System.Drawing.Size(459, 33);
             this.txtCandidato.TabIndex = 0;
@@ -197,6 +197,7 @@
             this.btnRegistrar.TabIndex = 16;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // panel2
             // 
@@ -208,6 +209,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(807, 186);
             this.panel2.TabIndex = 19;
+            // 
+            // img
+            // 
+            this.img.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.img.Location = new System.Drawing.Point(305, 17);
+            this.img.Name = "img";
+            this.img.Size = new System.Drawing.Size(192, 128);
+            this.img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img.TabIndex = 17;
+            this.img.TabStop = false;
+            this.img.Click += new System.EventHandler(this.img_Click);
             // 
             // label7
             // 
@@ -229,17 +241,6 @@
             this.label11.Size = new System.Drawing.Size(320, 40);
             this.label11.TabIndex = 13;
             this.label11.Text = "Imagem do Candidato";
-            // 
-            // img
-            // 
-            this.img.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.img.Location = new System.Drawing.Point(305, 17);
-            this.img.Name = "img";
-            this.img.Size = new System.Drawing.Size(192, 128);
-            this.img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img.TabIndex = 17;
-            this.img.TabStop = false;
-            this.img.Click += new System.EventHandler(this.img_Click);
             // 
             // frmPrincipal
             // 

@@ -11,7 +11,7 @@ namespace Nsf._2018.Modulo3.Logica.Telas.DB.Base
     {
         public MySqlConnection Create()
         {
-            string connectionString = "server=localhost;database=ViagemDB;uid=root;password=1234;sslmode=none";
+            string connectionString = "server=localhost;database=urnaDB;uid=root;password=1234;sslmode=none";
 
             MySqlConnection connection = new MySqlConnection(connectionString);
             connection.Open();
