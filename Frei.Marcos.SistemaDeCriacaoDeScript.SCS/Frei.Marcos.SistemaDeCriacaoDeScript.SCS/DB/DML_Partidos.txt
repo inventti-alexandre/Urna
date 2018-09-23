@@ -1,0 +1,11 @@
+﻿USE urnaDB;
+
+INSERT tb_partido VALUES (17, 'Partido Social dos Técnicos', 'PST');
+INSERT tb_partido VALUES (34, 'Partido Trabalhista da Confi Salsicha', 'PTCS');
+INSERT tb_partido VALUES (66, 'Partido Trabalhista Dora Aventureira', 'PTDA');
+INSERT tb_partido VALUES (25, 'Partido Colaborador de Springfield', 'PCS');
+INSERT tb_partido VALUES (10, 'Partido dos Programadores', 'PP');
+INSERT tb_partido VALUES (99, 'Partido Democrata BR', 'PDBR');
+INSERT tb_partido VALUES (97, 'Partido Do Futurista', 'PDF');
+
+SELECT * FROM tb_partido;

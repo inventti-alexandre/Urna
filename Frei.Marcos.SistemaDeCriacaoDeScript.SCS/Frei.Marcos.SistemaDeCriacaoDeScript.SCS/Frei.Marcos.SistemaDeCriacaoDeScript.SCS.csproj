@@ -95,5 +95,9 @@
   <ItemGroup>
     <None Include="Resources\Logo-TSE.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\DDL.txt" />
+    <Content Include="DB\DML_Partidos.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
