@@ -130,6 +130,8 @@
             this.txtPartido.Name = "txtPartido";
             this.txtPartido.Size = new System.Drawing.Size(93, 33);
             this.txtPartido.TabIndex = 3;
+            this.txtPartido.Text = "00";
+            this.txtPartido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPartido_KeyPress);
             // 
             // txtNCandidato
             // 
@@ -139,6 +141,9 @@
             this.txtNCandidato.Name = "txtNCandidato";
             this.txtNCandidato.Size = new System.Drawing.Size(94, 33);
             this.txtNCandidato.TabIndex = 1;
+            this.txtNCandidato.Text = "00000";
+            this.txtNCandidato.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtNCandidato_MouseClick);
+            this.txtNCandidato.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNCandidato_KeyPress);
             // 
             // txtCandidato
             // 
@@ -148,6 +153,8 @@
             this.txtCandidato.Name = "txtCandidato";
             this.txtCandidato.Size = new System.Drawing.Size(459, 33);
             this.txtCandidato.TabIndex = 0;
+            this.txtCandidato.Text = "digite um nome aqui...";
+            this.txtCandidato.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtCandidato_MouseClick);
             // 
             // panel1
             // 
@@ -260,7 +267,6 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCS - Sistema de Criação de Script";
-            this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

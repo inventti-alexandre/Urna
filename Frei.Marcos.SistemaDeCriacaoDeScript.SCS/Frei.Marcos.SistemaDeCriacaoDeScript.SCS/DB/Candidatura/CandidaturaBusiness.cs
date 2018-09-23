@@ -10,6 +10,9 @@ namespace Frei.Marcos.SistemaDeCriacaoDeScript.SCS.DB.Candidatura
     {
         public void Registrar(CandidaturaDTO dto)
         {
+            if (dto.nm_candidato == string.Empty)
+                throw new ArgumentException("O nome não pode ser nulo.");
+
             CandidaturaDatabase db = new CandidaturaDatabase();
             db.Registrar(dto);
         }
