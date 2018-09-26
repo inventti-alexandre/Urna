@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,12 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DB\Base\Connection.cs" />
+    <Compile Include="DB\Base\Database.cs" />
+    <Compile Include="DB\Candidato\CandidatoBusiness.cs" />
+    <Compile Include="DB\Candidato\CandidatoDatabase.cs" />
+    <Compile Include="DB\Candidato\CandidatoDTO.cs" />
+    <Compile Include="DB\Urna\UrnaBusiness.cs" />
+    <Compile Include="DB\Urna\UrnaDatabase.cs" />
+    <Compile Include="DB\Urna\UrnaDTO.cs" />
+    <Compile Include="frmDeputadoEstadual.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmDeputadoEstadual.Designer.cs">
+      <DependentUpon>frmDeputadoEstadual.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicial.Designer.cs">
+      <DependentUpon>frmInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin\ImagemPlugin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Telas\DeputadoEstadual.cs">
@@ -90,8 +106,11 @@
     <Compile Include="Telas\Senadora.Designer.cs">
       <DependentUpon>Senadora.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmDeputadoEstadual.resx">
+      <DependentUpon>frmDeputadoEstadual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicial.resx">
+      <DependentUpon>frmInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,6 +152,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
