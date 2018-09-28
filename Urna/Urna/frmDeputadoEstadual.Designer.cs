@@ -34,12 +34,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.ft = new System.Windows.Forms.PictureBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblPartido = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.pn = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,16 +63,20 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btn1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblPartido = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
+            this.lblVotoB = new System.Windows.Forms.Label();
+            this.pnInfo = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ft)).BeginInit();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -91,6 +94,7 @@
             this.panel2.Controls.Add(this.txtNum2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNum3);
+            this.panel2.Controls.Add(this.lblVotoB);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtNum4);
             this.panel2.Location = new System.Drawing.Point(13, 25);
@@ -105,6 +109,7 @@
             this.txtNum5.Name = "txtNum5";
             this.txtNum5.Size = new System.Drawing.Size(27, 26);
             this.txtNum5.TabIndex = 45;
+            this.txtNum5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // label6
             // 
@@ -123,6 +128,7 @@
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(27, 26);
             this.txtNum1.TabIndex = 38;
+            this.txtNum1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // ft
             // 
@@ -132,6 +138,24 @@
             this.ft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ft.TabIndex = 32;
             this.ft.TabStop = false;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.lblNome.Location = new System.Drawing.Point(82, 205);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(0, 20);
+            this.lblNome.TabIndex = 37;
+            // 
+            // lblPartido
+            // 
+            this.lblPartido.AutoSize = true;
+            this.lblPartido.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.lblPartido.Location = new System.Drawing.Point(82, 237);
+            this.lblPartido.Name = "lblPartido";
+            this.lblPartido.Size = new System.Drawing.Size(0, 20);
+            this.lblPartido.TabIndex = 37;
             // 
             // label5
             // 
@@ -146,52 +170,20 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel6.Controls.Add(this.panel5);
+            this.panel6.Controls.Add(this.pn);
             this.panel6.Location = new System.Drawing.Point(0, 272);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(446, 68);
             this.panel6.TabIndex = 39;
             // 
-            // panel5
+            // pn
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(232)))));
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(0, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(446, 80);
-            this.panel5.TabIndex = 11;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(4, 2);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 16);
-            this.label8.TabIndex = 8;
-            this.label8.Text = " Aperte a tecla:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 10.5F);
-            this.label7.Location = new System.Drawing.Point(16, 37);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(261, 17);
-            this.label7.TabIndex = 7;
-            this.label7.Text = " CORRIGE para REINICIAR este voto.";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 10.5F);
-            this.label9.Location = new System.Drawing.Point(3, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(284, 17);
-            this.label9.TabIndex = 6;
-            this.label9.Text = " CONFIRMA para CONFIRMAR este voto.";
+            this.pn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(232)))));
+            this.pn.Controls.Add(this.pnInfo);
+            this.pn.Location = new System.Drawing.Point(0, 3);
+            this.pn.Name = "pn";
+            this.pn.Size = new System.Drawing.Size(446, 80);
+            this.pn.TabIndex = 11;
             // 
             // label4
             // 
@@ -210,6 +202,7 @@
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(27, 26);
             this.txtNum2.TabIndex = 40;
+            this.txtNum2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // label3
             // 
@@ -228,6 +221,7 @@
             this.txtNum3.Name = "txtNum3";
             this.txtNum3.Size = new System.Drawing.Size(27, 26);
             this.txtNum3.TabIndex = 41;
+            this.txtNum3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // label2
             // 
@@ -246,6 +240,7 @@
             this.txtNum4.Name = "txtNum4";
             this.txtNum4.Size = new System.Drawing.Size(27, 26);
             this.txtNum4.TabIndex = 42;
+            this.txtNum4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // btn9
             // 
@@ -420,6 +415,7 @@
             this.button12.TabIndex = 9;
             this.button12.Text = "Branco";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -432,6 +428,7 @@
             this.button11.TabIndex = 8;
             this.button11.Text = "Corrige";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel3
             // 
@@ -489,23 +486,58 @@
             this.panel1.Size = new System.Drawing.Size(693, 384);
             this.panel1.TabIndex = 1;
             // 
-            // lblPartido
+            // lblVotoB
             // 
-            this.lblPartido.AutoSize = true;
-            this.lblPartido.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.lblPartido.Location = new System.Drawing.Point(82, 237);
-            this.lblPartido.Name = "lblPartido";
-            this.lblPartido.Size = new System.Drawing.Size(0, 20);
-            this.lblPartido.TabIndex = 37;
+            this.lblVotoB.AutoSize = true;
+            this.lblVotoB.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVotoB.Location = new System.Drawing.Point(46, 110);
+            this.lblVotoB.Name = "lblVotoB";
+            this.lblVotoB.Size = new System.Drawing.Size(231, 33);
+            this.lblVotoB.TabIndex = 34;
+            this.lblVotoB.Text = "Votar em Branco";
+            this.lblVotoB.Visible = false;
             // 
-            // lblNome
+            // pnInfo
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.lblNome.Location = new System.Drawing.Point(82, 205);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(0, 20);
-            this.lblNome.TabIndex = 37;
+            this.pnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(237)))), ((int)(((byte)(232)))));
+            this.pnInfo.Controls.Add(this.label10);
+            this.pnInfo.Controls.Add(this.label11);
+            this.pnInfo.Controls.Add(this.label12);
+            this.pnInfo.Location = new System.Drawing.Point(0, 0);
+            this.pnInfo.Name = "pnInfo";
+            this.pnInfo.Size = new System.Drawing.Size(446, 86);
+            this.pnInfo.TabIndex = 12;
+            this.pnInfo.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(4, 2);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 16);
+            this.label10.TabIndex = 8;
+            this.label10.Text = " Aperte a tecla:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Schoolbook", 10.5F);
+            this.label11.Location = new System.Drawing.Point(16, 37);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(261, 17);
+            this.label11.TabIndex = 7;
+            this.label11.Text = " CORRIGE para REINICIAR este voto.";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Schoolbook", 10.5F);
+            this.label12.Location = new System.Drawing.Point(3, 20);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(284, 17);
+            this.label12.TabIndex = 6;
+            this.label12.Text = " CONFIRMA para CONFIRMAR este voto.";
             // 
             // frmDeputadoEstadual
             // 
@@ -520,13 +552,14 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ft)).EndInit();
             this.panel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.pnInfo.ResumeLayout(false);
+            this.pnInfo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -558,10 +591,7 @@
         private System.Windows.Forms.PictureBox ft;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel pn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.Label label3;
@@ -570,5 +600,10 @@
         private System.Windows.Forms.TextBox txtNum4;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblPartido;
+        private System.Windows.Forms.Label lblVotoB;
+        private System.Windows.Forms.Panel pnInfo;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

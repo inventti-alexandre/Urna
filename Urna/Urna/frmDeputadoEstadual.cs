@@ -30,12 +30,16 @@ namespace Urna
             CandidatoBusiness business = new CandidatoBusiness();
             CandidatoDTO candidato = business.ConsultarCandidadoPorNumero(Convert.ToInt32(txtNum1.Text + txtNum2.Text + txtNum3.Text + txtNum4.Text + txtNum5.Text));
 
-            if (candidato != null)
+            if (candidato.nr_candidato != 0)
             {
                 ft.Image = ImagemPlugin.ConverterParaImagem(candidato.ft_candidato);
                 lblNome.Text = candidato.nm_candidato;
                 lblPartido.Text = $"{candidato.nm_partido} - {candidato.ds_sigra}";
             }
+            else
+                lblVotoB.Visible = true;
+
+            pnInfo.Visible = true;
         }
 
         private void Digitar(string numero)
@@ -125,6 +129,30 @@ namespace Urna
         {
             n = $"{n}0";
             Digitar(n);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            txtNum1.Text = "0";
+            txtNum2.Text = "0";
+            txtNum3.Text = "0";
+            txtNum4.Text = "0";
+            txtNum5.Text = "0";
+
+            PreencherDados();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            frmDeputadoEstadual frm = new frmDeputadoEstadual();
+            Hide();
+            frm.ShowDialog();
+            Close();
+        }
+
+        private void txtNum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }
