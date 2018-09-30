@@ -16,9 +16,7 @@ namespace Urna
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDeputadoEstadual());
+            Application.Run(new frmInicial());
         }
-
-        static public string Urna = "1";
     }
 }

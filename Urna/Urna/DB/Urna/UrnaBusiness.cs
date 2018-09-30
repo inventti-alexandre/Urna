@@ -8,5 +8,10 @@ namespace Urna.DB.Urna
 {
     class UrnaBusiness
     {
+        public bool VerificarUrna()
+        {
+            UrnaDatabase db = new UrnaDatabase();
+            return db.VerificarUrna();
+        }
     }
 }

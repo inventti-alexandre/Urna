@@ -9,8 +9,7 @@ namespace Urna.DB.Urna
     class UrnaDTO
     {
         public int id_urna { get; set; }
-        public DateTime dt_voto { get; set; }
-        public int tb_eleitor_id_eleitor { get; set; }
-        public int tb_candidato_id_candidato { get; set; }
+        public bool ds_situacao { get; set; }
+        public int id_eleitor { get; set; }
     }
 }

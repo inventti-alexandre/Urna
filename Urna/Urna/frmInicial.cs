@@ -7,39 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Urna.DB.Urna;
+using Urna.Telas;
 
 namespace Urna
 {
-    public partial class Urna : Form
+    public partial class frmInicial : Form
     {
-        public Urna()
+        public frmInicial()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void bntConfirmar_Click(object sender, EventArgs e)
         {
+            UrnaBusiness business = new UrnaBusiness();
+            frmDeputadoEstadual frm = new frmDeputadoEstadual();
 
-        }
+            bool ativa = business.VerificarUrna();
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
+            if (ativa == false)
+                lblBlock.Visible = true;
+            else
+            {
+                Hide();
+                frm.ShowDialog();
+                Close();
+            }
         }
     }
 }

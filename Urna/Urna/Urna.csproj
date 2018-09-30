@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,12 +55,8 @@
     <Compile Include="DB\Urna\UrnaBusiness.cs" />
     <Compile Include="DB\Urna\UrnaDatabase.cs" />
     <Compile Include="DB\Urna\UrnaDTO.cs" />
-    <Compile Include="frmDeputadoEstadual.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDeputadoEstadual.Designer.cs">
-      <DependentUpon>frmDeputadoEstadual.cs</DependentUpon>
-    </Compile>
+    <Compile Include="DB\Voto\VotoDatabase.cs" />
+    <Compile Include="DB\Voto\VotoDTO.cs" />
     <Compile Include="frmInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,45 +66,43 @@
     <Compile Include="Plugin\ImagemPlugin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Telas\DeputadoEstadual.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Telas\DeputadoEstadual.Designer.cs">
-      <DependentUpon>DeputadoEstadual.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\DeputadoFederal.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Telas\DeputadoFederal.Designer.cs">
-      <DependentUpon>DeputadoFederal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\FIM.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Telas\FIM.Designer.cs">
       <DependentUpon>FIM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Governador.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Telas\frmDeputadoEstadual.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Governador.Designer.cs">
-      <DependentUpon>Governador.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Presidente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Telas\Presidente.Designer.cs">
-      <DependentUpon>Presidente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Senadora.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Telas\Senadora.Designer.cs">
-      <DependentUpon>Senadora.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="frmDeputadoEstadual.resx">
+    <Compile Include="Telas\frmDeputadoEstadual.Designer.cs">
       <DependentUpon>frmDeputadoEstadual.cs</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
+    <Compile Include="Telas\frmDeputadoFederal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmDeputadoFederal.Designer.cs">
+      <DependentUpon>frmDeputadoFederal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmGovernador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmGovernador.Designer.cs">
+      <DependentUpon>frmGovernador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmPresidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmPresidente.Designer.cs">
+      <DependentUpon>frmPresidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmSenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmSenador.Designer.cs">
+      <DependentUpon>frmSenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrnaControl.cs" />
     <EmbeddedResource Include="frmInicial.resx">
       <DependentUpon>frmInicial.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,23 +115,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Telas\DeputadoEstadual.resx">
-      <DependentUpon>DeputadoEstadual.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\DeputadoFederal.resx">
-      <DependentUpon>DeputadoFederal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\FIM.resx">
       <DependentUpon>FIM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Governador.resx">
-      <DependentUpon>Governador.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\frmDeputadoEstadual.resx">
+      <DependentUpon>frmDeputadoEstadual.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Presidente.resx">
-      <DependentUpon>Presidente.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\frmDeputadoFederal.resx">
+      <DependentUpon>frmDeputadoFederal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Senadora.resx">
-      <DependentUpon>Senadora.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\frmGovernador.resx">
+      <DependentUpon>frmGovernador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmPresidente.resx">
+      <DependentUpon>frmPresidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmSenador.resx">
+      <DependentUpon>frmSenador.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

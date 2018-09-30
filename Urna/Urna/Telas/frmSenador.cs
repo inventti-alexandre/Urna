@@ -8,33 +8,90 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Urna.DB.Candidato;
+using Urna.DB.Voto;
 using Urna.Plugin;
 
-namespace Urna
+namespace Urna.Telas
 {
-    public partial class frmDeputadoEstadual : Form
+    public partial class frmSenador : Form
     {
-        public frmDeputadoEstadual()
+        public frmSenador()
         {
             InitializeComponent();
         }
+
+
         string n = string.Empty;
+        VotoDTO voto = new VotoDTO();
+        VotoDatabase db = new VotoDatabase();
+        frmGovernador frm = new frmGovernador();
+
+        private void Votar()
+        {
+            voto.fk_voto_eleitor = UrnaControl.id_Eleitor;
+            voto.fk_voto_candidato = Convert.ToInt32(n);
+
+            db.Votar(voto);
+            Hide();
+            frm.ShowDialog();
+            Close();
+        }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                if (n.Length > 3)
+                {
+                    n = n.Substring(0, 2);
+                }
+
+                if (n.Length < 3)
+                    throw new ArgumentException("O número do candidato é inválido");
+
+                if (lblVotoB.Visible == true)
+                {
+                    n = "00000";
+                    Votar();
+                }
+                else
+                    Votar();
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Urna", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocorreu um erro inexperado: {ex.Message}", "Urna", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void PreencherDados()
         {
             CandidatoBusiness business = new CandidatoBusiness();
-            CandidatoDTO candidato = business.ConsultarCandidadoPorNumero(Convert.ToInt32(txtNum1.Text + txtNum2.Text + txtNum3.Text + txtNum4.Text + txtNum5.Text));
+            int numero = Convert.ToInt32(txtNum1.Text + txtNum2.Text + txtNum3.Text);
+            CandidatoDTO candidato = business.ConsultarCandidadoPorNumero(numero);
 
             if (candidato.nr_candidato != 0)
             {
                 ft.Image = ImagemPlugin.ConverterParaImagem(candidato.ft_candidato);
                 lblNome.Text = candidato.nm_candidato;
                 lblPartido.Text = $"{candidato.nm_partido} - {candidato.ds_sigra}";
+
+                CandidatoDTO sup1 = business.ConsultarCandidadoPorNumero_Cargo(numero, "Suplente 1");
+                CandidatoDTO sup2 = business.ConsultarCandidadoPorNumero_Cargo(numero, "Suplente 2");
+
+                if (sup1.nr_candidato != 0)
+                {
+                    ft1.Image = ImagemPlugin.ConverterParaImagem(sup1.ft_candidato);
+                    lbl1Suplente.Text = sup1.nm_candidato;
+                }
+                if (sup2.nr_candidato != 0)
+                {
+                    ft2.Image = ImagemPlugin.ConverterParaImagem(sup2.ft_candidato);
+                    lbl2Suplente.Text = sup2.nm_candidato;
+                }
             }
             else
                 lblVotoB.Visible = true;
@@ -44,7 +101,7 @@ namespace Urna
 
         private void Digitar(string numero)
         {
-            if (numero.Length < 6)
+            if (numero.Length < 4)
             {
                 if (numero.Length > 0)
                 {
@@ -55,18 +112,10 @@ namespace Urna
                         if (numero.Length > 2)
                         {
                             txtNum3.Text = numero.Substring(2, 1);
-                            if (numero.Length > 3)
-                            {
-                                txtNum4.Text = numero.Substring(3, 1);
-                                if (numero.Length > 4)
-                                {
-                                    txtNum5.Text = numero.Substring(4, 1);
-                                    PreencherDados();
-                                }
-                            }
+                            PreencherDados();
                         }
                     }
-                } 
+                }
             }
         }
 
@@ -136,15 +185,14 @@ namespace Urna
             txtNum1.Text = "0";
             txtNum2.Text = "0";
             txtNum3.Text = "0";
-            txtNum4.Text = "0";
-            txtNum5.Text = "0";
+            n = "000";
 
             PreencherDados();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            frmDeputadoEstadual frm = new frmDeputadoEstadual();
+            frmSenador frm = new frmSenador();
             Hide();
             frm.ShowDialog();
             Close();

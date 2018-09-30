@@ -13,5 +13,11 @@ namespace Urna.DB.Candidato
             CandidatoDatabase db = new CandidatoDatabase();
             return db.ConsultarCandidadoPorNumero(n);
         }
+
+        public CandidatoDTO ConsultarCandidadoPorNumero_Cargo(int n, string cargo)
+        {
+            CandidatoDatabase db = new CandidatoDatabase();
+            return db.ConsultarCandidadoPorNumero_Cargo(n, cargo);
+        }
     }
 }
