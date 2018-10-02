@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\DTO_CadastroEleitor.cs" />
     <Compile Include="Telas\CadastroEleitor.cs">
       <SubType>Form</SubType>
     </Compile>
