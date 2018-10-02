@@ -52,7 +52,7 @@ namespace Urna.Telas
 
                 if (lblVotoB.Visible == true)
                 {
-                    n = "00000";
+                    n = "0000";
                     Votar();
                 }
                 else

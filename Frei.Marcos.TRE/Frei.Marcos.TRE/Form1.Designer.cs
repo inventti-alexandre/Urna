@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtnumerodeincricao = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -73,12 +73,12 @@
             this.textBox1.Size = new System.Drawing.Size(262, 20);
             this.textBox1.TabIndex = 2;
             // 
-            // textBox2
+            // txtnumerodeincricao
             // 
-            this.textBox2.Location = new System.Drawing.Point(124, 17);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtnumerodeincricao.Location = new System.Drawing.Point(124, 17);
+            this.txtnumerodeincricao.Name = "txtnumerodeincricao";
+            this.txtnumerodeincricao.Size = new System.Drawing.Size(175, 20);
+            this.txtnumerodeincricao.TabIndex = 1;
             // 
             // label2
             // 
@@ -171,7 +171,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(245)))));
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtnumerodeincricao);
             this.panel2.Location = new System.Drawing.Point(-11, 76);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(647, 47);
@@ -209,6 +209,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Confirmar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -261,7 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(618, 291);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button2);
@@ -298,7 +299,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtnumerodeincricao;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
