@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Frei.Marcos.TRE
 {
-    public partial class Form1 : Form
+    public partial class frmEleitor : Form
     {
-        public Form1()
+        public frmEleitor()
         {
             InitializeComponent();
         }
