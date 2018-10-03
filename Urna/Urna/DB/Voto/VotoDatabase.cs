@@ -18,6 +18,7 @@ namespace Urna.DB.Voto
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("fk_voto_urna", UrnaControl.Id));
             parms.Add(new MySqlParameter("fk_voto_candidato", dto.fk_voto_candidato));
+            //
             parms.Add(new MySqlParameter("fk_voto_eleitor", dto.fk_voto_eleitor));
 
             Database db = new Database();

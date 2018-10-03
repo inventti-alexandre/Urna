@@ -149,6 +149,7 @@
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(27, 26);
             this.txtNum2.TabIndex = 40;
+            this.txtNum2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // label3
             // 
@@ -167,6 +168,7 @@
             this.txtNum3.Name = "txtNum3";
             this.txtNum3.Size = new System.Drawing.Size(27, 26);
             this.txtNum3.TabIndex = 41;
+            this.txtNum3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // lblVotoB
             // 
@@ -377,6 +379,7 @@
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(27, 26);
             this.txtNum1.TabIndex = 38;
+            this.txtNum1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // ft
             // 
@@ -515,6 +518,7 @@
             this.txtNum5.Name = "txtNum5";
             this.txtNum5.Size = new System.Drawing.Size(27, 26);
             this.txtNum5.TabIndex = 45;
+            this.txtNum5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // label2
             // 
@@ -533,6 +537,7 @@
             this.txtNum4.Name = "txtNum4";
             this.txtNum4.Size = new System.Drawing.Size(27, 26);
             this.txtNum4.TabIndex = 42;
+            this.txtNum4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
             // 
             // frmDeputadoEstadual
             // 
