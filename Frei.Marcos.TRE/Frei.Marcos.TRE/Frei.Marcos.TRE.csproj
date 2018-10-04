@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,17 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Db\Base\Connection.cs" />
+    <Compile Include="Db\Base\Database.cs" />
     <Compile Include="Db\DESCripto.cs" />
+    <Compile Include="Db\Eleitor\EleitorBusiness.cs" />
+    <Compile Include="Db\Eleitor\EleitorDatabase.cs" />
+    <Compile Include="Db\Eleitor\EleitorDTO.cs" />
+    <Compile Include="Db\Urna\UrnaBusiness.cs" />
+    <Compile Include="Db\Urna\UrnaDatabase.cs" />
+    <Compile Include="Db\Urna\UrnaDTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mesario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesario.Designer.cs">
+      <DependentUpon>Mesario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesario.resx">
+      <DependentUpon>Mesario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

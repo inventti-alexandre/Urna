@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtnumerodeincricao = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtNinc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtUF = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtZona = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtMun = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dtpNasc = new System.Windows.Forms.DateTimePicker();
+            this.txtRG = new System.Windows.Forms.MaskedTextBox();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -66,19 +66,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(26, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNome.Location = new System.Drawing.Point(26, 149);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(262, 20);
+            this.txtNome.TabIndex = 2;
             // 
-            // txtnumerodeincricao
+            // txtNinc
             // 
-            this.txtnumerodeincricao.Location = new System.Drawing.Point(124, 17);
-            this.txtnumerodeincricao.Name = "txtnumerodeincricao";
-            this.txtnumerodeincricao.Size = new System.Drawing.Size(175, 20);
-            this.txtnumerodeincricao.TabIndex = 1;
+            this.txtNinc.Location = new System.Drawing.Point(124, 17);
+            this.txtNinc.Name = "txtNinc";
+            this.txtNinc.Size = new System.Drawing.Size(175, 20);
+            this.txtNinc.TabIndex = 1;
             // 
             // label2
             // 
@@ -91,12 +91,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "N° Inscrição:";
             // 
-            // textBox3
+            // txtUF
             // 
-            this.textBox3.Location = new System.Drawing.Point(330, 195);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(37, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtUF.Location = new System.Drawing.Point(330, 195);
+            this.txtUF.Name = "txtUF";
+            this.txtUF.Size = new System.Drawing.Size(37, 20);
+            this.txtUF.TabIndex = 6;
             // 
             // label3
             // 
@@ -109,12 +109,12 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Data de Nascimento";
             // 
-            // textBox4
+            // txtZona
             // 
-            this.textBox4.Location = new System.Drawing.Point(393, 195);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtZona.Location = new System.Drawing.Point(393, 195);
+            this.txtZona.Name = "txtZona";
+            this.txtZona.Size = new System.Drawing.Size(199, 20);
+            this.txtZona.TabIndex = 8;
             // 
             // label4
             // 
@@ -138,12 +138,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Municipio";
             // 
-            // textBox6
+            // txtMun
             // 
-            this.textBox6.Location = new System.Drawing.Point(330, 149);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(262, 20);
-            this.textBox6.TabIndex = 12;
+            this.txtMun.Location = new System.Drawing.Point(330, 149);
+            this.txtMun.Name = "txtMun";
+            this.txtMun.Size = new System.Drawing.Size(262, 20);
+            this.txtMun.TabIndex = 12;
             // 
             // label6
             // 
@@ -171,7 +171,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(245)))));
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txtnumerodeincricao);
+            this.panel2.Controls.Add(this.txtNinc);
             this.panel2.Location = new System.Drawing.Point(-11, 76);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(647, 47);
@@ -186,30 +186,30 @@
             this.panel1.Size = new System.Drawing.Size(10, 291);
             this.panel1.TabIndex = 16;
             // 
-            // dateTimePicker1
+            // dtpNasc
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(26, 198);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(262, 20);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dtpNasc.Location = new System.Drawing.Point(26, 198);
+            this.dtpNasc.Name = "dtpNasc";
+            this.dtpNasc.Size = new System.Drawing.Size(262, 20);
+            this.dtpNasc.TabIndex = 18;
             // 
-            // maskedTextBox1
+            // txtRG
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(26, 247);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(262, 20);
-            this.maskedTextBox1.TabIndex = 19;
+            this.txtRG.Location = new System.Drawing.Point(26, 247);
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(262, 20);
+            this.txtRG.TabIndex = 19;
             // 
-            // button1
+            // btnConfirmar
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(330, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 30);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Confirmar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConfirmar.Location = new System.Drawing.Point(330, 237);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(124, 30);
+            this.btnConfirmar.TabIndex = 20;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // button2
             // 
@@ -262,23 +262,23 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(618, 291);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.btnConfirmar);
+            this.Controls.Add(this.txtRG);
+            this.Controls.Add(this.dtpNasc);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtMun);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtZona);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtUF);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -298,22 +298,22 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtnumerodeincricao;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtNinc;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtUF;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtZona;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtMun;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dtpNasc;
+        private System.Windows.Forms.MaskedTextBox txtRG;
+        private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
