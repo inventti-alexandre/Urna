@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Frei.Marcos.TRE
 {
-    public partial class CadastroEleitor : Form
+    public partial class Form1 : Form
     {
-        public CadastroEleitor()
+        public Form1()
         {
             InitializeComponent();
         }
