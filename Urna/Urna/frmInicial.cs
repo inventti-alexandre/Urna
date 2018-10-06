@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Urna.DB.Urna;
+using Urna.DB.Voto;
 using Urna.Telas;
 
 namespace Urna
@@ -23,6 +24,7 @@ namespace Urna
         {
             UrnaBusiness business = new UrnaBusiness();
             frmDeputadoEstadual frm = new frmDeputadoEstadual();
+            VotoDatabase db = new VotoDatabase();
 
             bool ativa = business.VerificarUrna();
 
@@ -30,6 +32,7 @@ namespace Urna
                 lblBlock.Visible = true;
             else
             {
+                db.ResetUrna();
                 Hide();
                 frm.ShowDialog();
                 Close();

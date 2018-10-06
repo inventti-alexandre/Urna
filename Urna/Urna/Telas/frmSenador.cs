@@ -41,21 +41,10 @@ namespace Urna.Telas
         {
             try
             {
-                if (n.Length > 3)
-                {
-                    n = n.Substring(0, 2);
-                }
-
-                if (n.Length < 3)
-                    throw new ArgumentException("O número do candidato é inválido");
-
-                if (lblVotoB.Visible == true)
-                {
-                    n = "00000";
+                if (n.Length == 3)
                     Votar();
-                }
                 else
-                    Votar();
+                    throw new ArgumentException("O número do candidato é inválido.");
             }
             catch (ArgumentException ex)
             {
@@ -71,7 +60,7 @@ namespace Urna.Telas
         {
             CandidatoBusiness business = new CandidatoBusiness();
             int numero = Convert.ToInt32(txtNum1.Text + txtNum2.Text + txtNum3.Text);
-            CandidatoDTO candidato = business.ConsultarCandidadoPorNumero(numero);
+            CandidatoDTO candidato = business.ConsultarCandidadoPorNumero_Cargo(numero, "Senador");
 
             if (candidato.nr_candidato != 0)
             {
@@ -121,63 +110,93 @@ namespace Urna.Telas
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            n = $"{n}1";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}1";
+                Digitar(n);
+            }
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            n = $"{n}2";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}2";
+                Digitar(n);
+            }
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            n = $"{n}3";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}3";
+                Digitar(n);
+            }
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            n = $"{n}4";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}4";
+                Digitar(n);
+            }
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            n = $"{n}5";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}5";
+                Digitar(n);
+            }
 
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            n = $"{n}6";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}6";
+                Digitar(n);
+            }
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            n = $"{n}7";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}7";
+                Digitar(n);
+            }
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            n = $"{n}8";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}8";
+                Digitar(n);
+            }
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            n = $"{n}9";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}9";
+                Digitar(n);
+            }
         }
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            n = $"{n}0";
-            Digitar(n);
+            if (n.Length < 3)
+            {
+                n = $"{n}0";
+                Digitar(n);
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
