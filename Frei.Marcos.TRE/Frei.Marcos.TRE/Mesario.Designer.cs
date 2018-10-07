@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNinc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.txtZona = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtUrna = new System.Windows.Forms.TextBox();
             this.NomeDoMesario = new System.Windows.Forms.Label();
@@ -56,12 +56,25 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.btnBuscar);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtNinc);
+            this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(27, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 50);
             this.panel2.TabIndex = 16;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBuscar.Location = new System.Drawing.Point(185, 13);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(65, 20);
+            this.btnBuscar.TabIndex = 31;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label2
             // 
@@ -69,7 +82,7 @@
             this.label2.BackColor = System.Drawing.Color.Gainsboro;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 16);
+            this.label2.Location = new System.Drawing.Point(24, 244);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 3;
@@ -78,9 +91,9 @@
             // 
             // txtNinc
             // 
-            this.txtNinc.Location = new System.Drawing.Point(100, 15);
+            this.txtNinc.Location = new System.Drawing.Point(43, 15);
             this.txtNinc.Name = "txtNinc";
-            this.txtNinc.Size = new System.Drawing.Size(79, 20);
+            this.txtNinc.Size = new System.Drawing.Size(136, 20);
             this.txtNinc.TabIndex = 1;
             // 
             // label3
@@ -129,7 +142,7 @@
             this.label7.BackColor = System.Drawing.Color.Gainsboro;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(24, 244);
+            this.label7.Location = new System.Drawing.Point(10, 16);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(27, 17);
             this.label7.TabIndex = 21;
@@ -208,7 +221,7 @@
             this.btnConfirmar.BackColor = System.Drawing.Color.White;
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConfirmar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnConfirmar.Location = new System.Drawing.Point(27, 458);
+            this.btnConfirmar.Location = new System.Drawing.Point(27, 465);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(65, 37);
             this.btnConfirmar.TabIndex = 30;
@@ -221,25 +234,12 @@
             this.btnCancelar.BackColor = System.Drawing.Color.White;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(224, 458);
+            this.btnCancelar.Location = new System.Drawing.Point(224, 465);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(65, 37);
             this.btnCancelar.TabIndex = 31;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnBuscar.Location = new System.Drawing.Point(185, 13);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(65, 20);
-            this.btnBuscar.TabIndex = 31;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label9
             // 
@@ -260,6 +260,7 @@
             this.txtUrna.Name = "txtUrna";
             this.txtUrna.Size = new System.Drawing.Size(262, 20);
             this.txtUrna.TabIndex = 28;
+            this.txtUrna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUrna_KeyPress);
             // 
             // NomeDoMesario
             // 
@@ -280,6 +281,7 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(307, 514);
             this.Controls.Add(this.NomeDoMesario);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.txtUrna);
@@ -291,7 +293,6 @@
             this.Controls.Add(this.txtMun);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtRG);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.dtpNasc);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNome);

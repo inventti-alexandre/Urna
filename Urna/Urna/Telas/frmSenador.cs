@@ -24,12 +24,15 @@ namespace Urna.Telas
         string n = string.Empty;
         VotoDTO voto = new VotoDTO();
         VotoDatabase db = new VotoDatabase();
-        frmGovernador frm = new frmGovernador();
+        frmSenador2 frm = new frmSenador2();
 
         private void Votar()
         {
             voto.fk_voto_eleitor = UrnaControl.id_Eleitor;
-            voto.fk_voto_candidato = Convert.ToInt32(n);
+
+            CandidatoBusiness business = new CandidatoBusiness();
+            CandidatoDTO candidato = business.ConsultarCandidadoPorNumero_Cargo(Convert.ToInt32(n), "Senador");
+            voto.fk_voto_candidato = candidato.id_candidato;
 
             db.Votar(voto);
             Hide();

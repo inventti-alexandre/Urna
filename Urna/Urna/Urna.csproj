@@ -102,6 +102,12 @@
     <Compile Include="Telas\frmSenador.Designer.cs">
       <DependentUpon>frmSenador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\frmSenador2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmSenador2.Designer.cs">
+      <DependentUpon>frmSenador2.cs</DependentUpon>
+    </Compile>
     <Compile Include="UrnaControl.cs" />
     <EmbeddedResource Include="frmInicial.resx">
       <DependentUpon>frmInicial.cs</DependentUpon>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmSenador.resx">
       <DependentUpon>frmSenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmSenador2.resx">
+      <DependentUpon>frmSenador2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

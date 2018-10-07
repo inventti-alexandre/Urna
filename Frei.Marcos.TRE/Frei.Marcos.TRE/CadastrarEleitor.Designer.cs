@@ -1,6 +1,6 @@
 ﻿namespace Frei.Marcos.TRE
 {
-    partial class Form1
+    partial class CadastrarEleitor
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarEleitor));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtNinc = new System.Windows.Forms.TextBox();
@@ -50,6 +50,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -258,7 +259,18 @@
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
             // 
-            // Form1
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(594, 270);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(24, 17);
+            this.label9.TabIndex = 9;
+            this.label9.Text = ">>";
+            // 
+            // CadastrarEleitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -273,6 +285,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMun);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtZona);
             this.Controls.Add(this.label4);
@@ -282,7 +295,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "CadastrarEleitor";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
@@ -318,6 +331,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label9;
     }
 }
 

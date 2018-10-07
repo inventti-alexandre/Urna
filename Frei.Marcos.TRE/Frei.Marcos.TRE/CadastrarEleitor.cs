@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Frei.Marcos.TRE
 {
-    public partial class Form1 : Form
+    public partial class CadastrarEleitor : Form
     {
-        public Form1()
+        public CadastrarEleitor()
         {
             InitializeComponent();
         }

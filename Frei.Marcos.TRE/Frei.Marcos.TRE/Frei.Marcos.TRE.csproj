@@ -55,11 +55,11 @@
     <Compile Include="Db\Urna\UrnaBusiness.cs" />
     <Compile Include="Db\Urna\UrnaDatabase.cs" />
     <Compile Include="Db\Urna\UrnaDTO.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="CadastrarEleitor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CadastrarEleitor.Designer.cs">
+      <DependentUpon>CadastrarEleitor.cs</DependentUpon>
     </Compile>
     <Compile Include="Mesario.cs">
       <SubType>Form</SubType>
@@ -69,8 +69,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CadastrarEleitor.resx">
+      <DependentUpon>CadastrarEleitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mesario.resx">
       <DependentUpon>Mesario.cs</DependentUpon>
