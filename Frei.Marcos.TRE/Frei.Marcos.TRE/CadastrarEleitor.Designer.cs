@@ -44,13 +44,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtpNasc = new System.Windows.Forms.DateTimePicker();
-            this.txtRG = new System.Windows.Forms.MaskedTextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtRG = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,6 +70,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(26, 149);
+            this.txtNome.MaxLength = 50;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(262, 20);
             this.txtNome.TabIndex = 2;
@@ -77,6 +78,7 @@
             // txtNinc
             // 
             this.txtNinc.Location = new System.Drawing.Point(124, 17);
+            this.txtNinc.MaxLength = 30;
             this.txtNinc.Name = "txtNinc";
             this.txtNinc.Size = new System.Drawing.Size(175, 20);
             this.txtNinc.TabIndex = 1;
@@ -95,6 +97,7 @@
             // txtUF
             // 
             this.txtUF.Location = new System.Drawing.Point(330, 195);
+            this.txtUF.MaxLength = 2;
             this.txtUF.Name = "txtUF";
             this.txtUF.Size = new System.Drawing.Size(37, 20);
             this.txtUF.TabIndex = 6;
@@ -113,6 +116,7 @@
             // txtZona
             // 
             this.txtZona.Location = new System.Drawing.Point(393, 195);
+            this.txtZona.MaxLength = 3;
             this.txtZona.Name = "txtZona";
             this.txtZona.Size = new System.Drawing.Size(199, 20);
             this.txtZona.TabIndex = 8;
@@ -142,6 +146,7 @@
             // txtMun
             // 
             this.txtMun.Location = new System.Drawing.Point(330, 149);
+            this.txtMun.MaxLength = 50;
             this.txtMun.Name = "txtMun";
             this.txtMun.Size = new System.Drawing.Size(262, 20);
             this.txtMun.TabIndex = 12;
@@ -193,13 +198,6 @@
             this.dtpNasc.Name = "dtpNasc";
             this.dtpNasc.Size = new System.Drawing.Size(262, 20);
             this.dtpNasc.TabIndex = 18;
-            // 
-            // txtRG
-            // 
-            this.txtRG.Location = new System.Drawing.Point(26, 247);
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(262, 20);
-            this.txtRG.TabIndex = 19;
             // 
             // btnConfirmar
             // 
@@ -270,6 +268,14 @@
             this.label9.TabIndex = 9;
             this.label9.Text = ">>";
             // 
+            // txtRG
+            // 
+            this.txtRG.Location = new System.Drawing.Point(26, 244);
+            this.txtRG.MaxLength = 12;
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(262, 20);
+            this.txtRG.TabIndex = 2;
+            // 
             // CadastrarEleitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,7 +285,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.txtRG);
             this.Controls.Add(this.dtpNasc);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
@@ -291,6 +296,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtUF);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtRG);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -325,13 +331,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dtpNasc;
-        private System.Windows.Forms.MaskedTextBox txtRG;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtRG;
     }
 }
 

@@ -16,7 +16,7 @@ namespace Frei.Marcos.TRE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Mesario());
+            Application.Run(new CadastrarEleitor());
         }
     }
 }

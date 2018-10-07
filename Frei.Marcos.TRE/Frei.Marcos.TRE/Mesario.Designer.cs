@@ -30,13 +30,13 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtNinc = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dtpNasc = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtRG = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMun = new System.Windows.Forms.TextBox();
@@ -56,8 +56,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.btnBuscar);
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtNinc);
-            this.panel2.Controls.Add(this.label7);
             this.panel2.Location = new System.Drawing.Point(27, 62);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 50);
@@ -76,25 +76,38 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // txtNinc
+            // 
+            this.txtNinc.Location = new System.Drawing.Point(97, 15);
+            this.txtNinc.Name = "txtNinc";
+            this.txtNinc.Size = new System.Drawing.Size(82, 20);
+            this.txtNinc.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Gainsboro;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(24, 244);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 17);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "RG";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Gainsboro;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(24, 244);
+            this.label2.Location = new System.Drawing.Point(3, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "N° Inscrição:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txtNinc
-            // 
-            this.txtNinc.Location = new System.Drawing.Point(43, 15);
-            this.txtNinc.Name = "txtNinc";
-            this.txtNinc.Size = new System.Drawing.Size(136, 20);
-            this.txtNinc.TabIndex = 1;
             // 
             // label3
             // 
@@ -135,19 +148,6 @@
             this.dtpNasc.Name = "dtpNasc";
             this.dtpNasc.Size = new System.Drawing.Size(262, 20);
             this.dtpNasc.TabIndex = 20;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Gainsboro;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(10, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 17);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "RG";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtRG
             // 
@@ -281,7 +281,7 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(307, 514);
             this.Controls.Add(this.NomeDoMesario);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.txtUrna);
@@ -300,6 +300,7 @@
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Mesario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mesario";
             this.Load += new System.EventHandler(this.Mesario_Load);
             this.panel2.ResumeLayout(false);
