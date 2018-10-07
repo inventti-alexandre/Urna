@@ -111,6 +111,7 @@ namespace Frei.Marcos.TRE
         {
             Close();
 
+
         }
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
