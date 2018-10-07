@@ -55,24 +55,30 @@
     <Compile Include="Db\Urna\UrnaBusiness.cs" />
     <Compile Include="Db\Urna\UrnaDatabase.cs" />
     <Compile Include="Db\Urna\UrnaDTO.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Telas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Telas\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mesario.cs">
+    <Compile Include="Telas\Mesario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mesario.Designer.cs">
+    <Compile Include="Telas\Mesario.Designer.cs">
       <DependentUpon>Mesario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Telas\Votos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Votos.Designer.cs">
+      <DependentUpon>Votos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mesario.resx">
+    <EmbeddedResource Include="Telas\Mesario.resx">
       <DependentUpon>Mesario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -84,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Votos.resx">
+      <DependentUpon>Votos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
