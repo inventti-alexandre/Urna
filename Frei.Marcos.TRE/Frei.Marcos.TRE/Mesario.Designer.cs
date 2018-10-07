@@ -51,6 +51,8 @@
             this.NomeDoMesario = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -287,6 +289,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.txtUrna);
             this.panel1.Controls.Add(this.btnConfirmar);
@@ -307,6 +311,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(795, 200);
             this.panel1.TabIndex = 37;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(3, 183);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(24, 17);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "<<";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(750, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 17);
+            this.label1.TabIndex = 32;
+            this.label1.Text = ">>";
             // 
             // btnCancelar
             // 
@@ -334,6 +361,7 @@
             this.btnConfirmar.TabIndex = 30;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click_1);
             // 
             // label4
             // 
@@ -359,7 +387,10 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Mesario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mesario";
             this.Load += new System.EventHandler(this.Mesario_Load);
             this.panel2.ResumeLayout(false);
@@ -399,5 +430,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label1;
     }
 }

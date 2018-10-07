@@ -68,6 +68,7 @@
             this.txtNum5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNum4 = new System.Windows.Forms.TextBox();
+            this.lblVotoN = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -132,6 +133,7 @@
             // btnConfirmar
             // 
             this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(153)))), ((int)(((byte)(46)))));
+            this.btnConfirmar.Enabled = false;
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Century Schoolbook", 9.75F);
             this.btnConfirmar.Location = new System.Drawing.Point(131, 267);
@@ -491,6 +493,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.lblVotoN);
             this.panel2.Controls.Add(this.txtNum5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.txtNum1);
@@ -538,6 +541,17 @@
             this.txtNum4.Size = new System.Drawing.Size(27, 26);
             this.txtNum4.TabIndex = 42;
             this.txtNum4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum_KeyPress);
+            // 
+            // lblVotoN
+            // 
+            this.lblVotoN.AutoSize = true;
+            this.lblVotoN.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVotoN.Location = new System.Drawing.Point(80, 110);
+            this.lblVotoN.Name = "lblVotoN";
+            this.lblVotoN.Size = new System.Drawing.Size(157, 33);
+            this.lblVotoN.TabIndex = 46;
+            this.lblVotoN.Text = "Votar Nulo";
+            this.lblVotoN.Visible = false;
             // 
             // frmDeputadoEstadual
             // 
@@ -609,5 +623,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNum4;
         private System.Windows.Forms.TextBox txtNum5;
+        private System.Windows.Forms.Label lblVotoN;
     }
 }

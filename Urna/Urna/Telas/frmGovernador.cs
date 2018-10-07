@@ -31,7 +31,13 @@ namespace Urna.Telas
 
             CandidatoBusiness business = new CandidatoBusiness();
             CandidatoDTO candidato = business.ConsultarCandidadoPorNumero_Cargo(Convert.ToInt32(n), "Governador");
-            voto.fk_voto_candidato = candidato.id_candidato;
+
+            if (lblVotoB.Visible == true)
+                voto.fk_voto_candidato = 3;
+            else if (lblVotoN.Visible == true)
+                voto.fk_voto_candidato = 4;
+            else
+                voto.fk_voto_candidato = candidato.id_candidato;
 
             db.Votar(voto);
             Hide();
@@ -79,7 +85,12 @@ namespace Urna.Telas
                 }
             }
             else
-                lblVotoB.Visible = true;
+            {
+                if (lblVotoB.Visible == false)
+                {
+                    lblVotoN.Visible = true;
+                }
+            }
 
             pnInfo.Visible = true;
         }
@@ -95,6 +106,7 @@ namespace Urna.Telas
                     {
                         txtNum2.Text = numero.Substring(1, 1);
                         PreencherDados();
+                        btnConfirmar.Enabled = true;
                     }
                 }
             }
@@ -193,19 +205,29 @@ namespace Urna.Telas
 
         private void button12_Click(object sender, EventArgs e)
         {
-            txtNum1.Text = "0";
-            txtNum2.Text = "0";
-            n = "00";
+            if (lblVotoB.Visible == false)
+            {
+                lblVotoB.Visible = true;
+                lblVotoN.Visible = false;
 
-            PreencherDados();
+                txtNum1.Text = "0";
+                txtNum2.Text = "0";
+                n = "00";
+
+                PreencherDados();
+                btnConfirmar.Enabled = true;
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            frmGovernador frm = new frmGovernador();
-            Hide();
-            frm.ShowDialog();
-            Close();
+            if (n != string.Empty)
+            {
+                frmGovernador frm = new frmGovernador();
+                Hide();
+                frm.ShowDialog();
+                Close();
+            }
         }
 
         private void txtNum_KeyPress(object sender, KeyPressEventArgs e)

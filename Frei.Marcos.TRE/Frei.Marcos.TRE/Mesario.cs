@@ -1,4 +1,5 @@
-﻿using Frei.Marcos.TRE.Db.Eleitor;
+﻿using Frei.Marcos.TRE.Db;
+using Frei.Marcos.TRE.Db.Eleitor;
 using Frei.Marcos.TRE.Db.Urna;
 using System;
 using System.Collections.Generic;
@@ -23,15 +24,29 @@ namespace Frei.Marcos.TRE
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            EleitorBusiness business = new EleitorBusiness();
-            eleitor = business.Consultar(Convert.ToInt32(txtNinc.Text));
+            try
+            {
+                EleitorBusiness business = new EleitorBusiness();
+                DESCripto cripto = new DESCripto();
+                string numeroInscricao = cripto.Criptografar("planalto", txtNinc.Text);
 
-            txtNome.Text = eleitor.nm_nome;
-            dtpNasc.Value = eleitor.dt_nascimento;
-            txtRG.Text = eleitor.nr_rg;
-            txtMun.Text = eleitor.nm_municipio;
-            txtUF.Text = eleitor.nm_uf;
-            txtZona.Text = eleitor.nr_zona.ToString();
+                eleitor = business.Consultar(numeroInscricao);
+
+                txtNome.Text = cripto.Descriptografar("planalto", eleitor.nm_nome);
+                dtpNasc.Value = eleitor.dt_nascimento;
+                txtRG.Text = cripto.Descriptografar("planalto", eleitor.nr_rg);
+                txtMun.Text = cripto.Descriptografar("planalto", eleitor.nm_municipio);
+                txtUF.Text = cripto.Descriptografar("planalto", eleitor.nm_uf);
+                txtZona.Text = eleitor.nr_zona.ToString();
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Urna - Informática A", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocorreu um erro inexperado: {ex.Message}", "Urna - Informática A", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 
@@ -101,6 +116,43 @@ namespace Frei.Marcos.TRE
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            CadastrarEleitor frm = new CadastrarEleitor();
+            Hide();
+            frm.Show();
+        }
+
+        private void btnConfirmar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                UrnaDatabase db = new UrnaDatabase();
+                if (txtUrna.Text == string.Empty)
+                    throw new ArgumentException("Digite o ID da urna.");
+
+                if (db.VerificarUrna(Convert.ToInt32(txtUrna.Text)) == true)
+                {
+                    UrnaDTO dto = new UrnaDTO();
+                    dto.id_urna = Convert.ToInt32(txtUrna.Text);
+                    dto.id_eleitor = eleitor.id_eleitor;
+
+                    db.LiberarUrna(dto);
+                    MessageBox.Show("Urna liberada!", "Urna - Informática A", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                    throw new ArgumentException("Esta urna está em uso.");
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Urna - Informática A", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocorreu um erro inexperado: {ex.Message}", "Urna - Informática A", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

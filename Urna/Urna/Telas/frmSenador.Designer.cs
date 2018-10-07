@@ -72,6 +72,7 @@
             this.btn6 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblVotoN = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ft1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ft2)).BeginInit();
@@ -151,6 +152,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.lblVotoN);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.txtNum1);
@@ -431,6 +433,7 @@
             // btnConfirmar
             // 
             this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(153)))), ((int)(((byte)(46)))));
+            this.btnConfirmar.Enabled = false;
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Century Schoolbook", 9.75F);
             this.btnConfirmar.Location = new System.Drawing.Point(131, 267);
@@ -587,6 +590,17 @@
             this.panel1.Size = new System.Drawing.Size(693, 384);
             this.panel1.TabIndex = 4;
             // 
+            // lblVotoN
+            // 
+            this.lblVotoN.AutoSize = true;
+            this.lblVotoN.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVotoN.Location = new System.Drawing.Point(81, 80);
+            this.lblVotoN.Name = "lblVotoN";
+            this.lblVotoN.Size = new System.Drawing.Size(157, 33);
+            this.lblVotoN.TabIndex = 47;
+            this.lblVotoN.Text = "Votar Nulo";
+            this.lblVotoN.Visible = false;
+            // 
             // frmSenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -663,5 +677,6 @@
         private System.Windows.Forms.Label lbl1Suplente;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblVotoN;
     }
 }

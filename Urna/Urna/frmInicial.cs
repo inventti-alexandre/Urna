@@ -18,6 +18,7 @@ namespace Urna
         public frmInicial()
         {
             InitializeComponent();
+            lblId.Text = $"Urna {UrnaControl.Id}";
         }
 
         private void bntConfirmar_Click(object sender, EventArgs e)

@@ -22,5 +22,27 @@ namespace Frei.Marcos.TRE.Db.Urna
             Database db = new Database();
             db.ExecuteInsertScript(script, parms);
         }
+
+        public bool VerificarUrna(int idUrna)
+        {
+            string script = @"SELECT * FROM tb_urna WHERE id_urna = @id_urna";
+
+            List<MySqlParameter> parms = new List<MySqlParameter>();
+            parms.Add(new MySqlParameter("id_urna", idUrna));
+
+            Database db = new Database();
+            MySqlDataReader reader = db.ExecuteSelectScript(script, parms);
+
+            if (reader.Read())
+            {
+                bool situacao = reader.GetBoolean("ds_situacao");
+
+                if (situacao == true)
+                    return false;
+                else
+                    return true;
+            }
+            else return false;
+        }
     }
 }

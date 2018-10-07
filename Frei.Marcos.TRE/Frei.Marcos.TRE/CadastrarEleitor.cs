@@ -69,5 +69,12 @@ namespace Frei.Marcos.TRE
                 MessageBox.Show($"Ocorreu um erro inexperado: {ex.Message}", "TRE", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Mesario frm = new Mesario();
+            Hide();
+            frm.Show();
+        }
     }
 }

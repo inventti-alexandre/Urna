@@ -14,7 +14,7 @@ namespace Frei.Marcos.TRE.Db.Eleitor
             db.CadastrarEleitor(dto);
         }
 
-        public EleitorDTO Consultar(int n)
+        public EleitorDTO Consultar(string n)
         {
             EleitorDatabase db = new EleitorDatabase();
             return db.Consultar(n);

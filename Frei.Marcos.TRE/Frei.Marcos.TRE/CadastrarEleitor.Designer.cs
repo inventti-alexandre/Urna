@@ -273,6 +273,7 @@
             this.label9.Size = new System.Drawing.Size(24, 17);
             this.label9.TabIndex = 9;
             this.label9.Text = ">>";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // txtRG
             // 
@@ -307,7 +308,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CadastrarEleitor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);

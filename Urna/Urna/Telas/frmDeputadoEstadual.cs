@@ -31,7 +31,13 @@ namespace Urna.Telas
 
             CandidatoBusiness business = new CandidatoBusiness();
             CandidatoDTO candidato = business.ConsultarCandidadoPorNumero(Convert.ToInt32(n));
-            voto.fk_voto_candidato = candidato.id_candidato;
+
+            if (lblVotoB.Visible == true)
+                voto.fk_voto_candidato = 3;
+            else if (lblVotoN.Visible == true)
+                voto.fk_voto_candidato = 4;
+            else
+                voto.fk_voto_candidato = candidato.id_candidato;
 
             db.Votar(voto);
             Hide();
@@ -70,7 +76,12 @@ namespace Urna.Telas
                 lblPartido.Text = $"{candidato.nm_partido} - {candidato.ds_sigra}";
             }
             else
-                lblVotoB.Visible = true;
+            {
+                if (lblVotoB.Visible == false)
+                {
+                    lblVotoN.Visible = true;
+                }
+            }
 
             pnInfo.Visible = true;
         }
@@ -95,6 +106,7 @@ namespace Urna.Telas
                                 {
                                     txtNum5.Text = numero.Substring(4, 1);
                                     PreencherDados();
+                                    btnConfirmar.Enabled = true;
                                 }
                             }
                         }
@@ -196,22 +208,32 @@ namespace Urna.Telas
 
         private void button12_Click(object sender, EventArgs e)
         {
-            txtNum1.Text = "0";
-            txtNum2.Text = "0";
-            txtNum3.Text = "0";
-            txtNum4.Text = "0";
-            txtNum5.Text = "0";
-            n = "00000";
+            if (lblVotoB.Visible == false)
+            {
+                lblVotoB.Visible = true;
+                lblVotoN.Visible = false;
 
-            PreencherDados();
+                txtNum1.Text = "0";
+                txtNum2.Text = "0";
+                txtNum3.Text = "0";
+                txtNum4.Text = "0";
+                txtNum5.Text = "0";
+                n = "00000";
+
+                PreencherDados();
+                btnConfirmar.Enabled = true;
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            frmDeputadoEstadual frm = new frmDeputadoEstadual();
-            Hide();
-            frm.ShowDialog();
-            Close();
+            if (n != string.Empty)
+            {
+                frmDeputadoEstadual frm = new frmDeputadoEstadual();
+                Hide();
+                frm.ShowDialog();
+                Close(); 
+            }
         }
 
         private void txtNum_KeyPress(object sender, KeyPressEventArgs e)
