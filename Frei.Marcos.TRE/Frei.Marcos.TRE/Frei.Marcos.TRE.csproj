@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,11 +55,11 @@
     <Compile Include="Db\Urna\UrnaBusiness.cs" />
     <Compile Include="Db\Urna\UrnaDatabase.cs" />
     <Compile Include="Db\Urna\UrnaDTO.cs" />
-    <Compile Include="Telas\Form1.cs">
+    <Compile Include="Telas\CadastrarEleitor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\CadastrarEleitor.Designer.cs">
+      <DependentUpon>CadastrarEleitor.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Mesario.cs">
       <SubType>Form</SubType>
@@ -75,8 +75,8 @@
     <Compile Include="Telas\Votos.Designer.cs">
       <DependentUpon>Votos.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Telas\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\CadastrarEleitor.resx">
+      <DependentUpon>CadastrarEleitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Mesario.resx">
       <DependentUpon>Mesario.cs</DependentUpon>

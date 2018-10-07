@@ -22,5 +22,12 @@ namespace Frei.Marcos.TRE.Telas
 
 
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            CadastrarEleitor frm = new CadastrarEleitor();
+            Hide();
+            frm.Show();
+        }
     }
 }

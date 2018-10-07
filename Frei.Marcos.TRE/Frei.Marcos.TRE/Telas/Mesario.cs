@@ -1,6 +1,7 @@
 ﻿using Frei.Marcos.TRE.Db;
 using Frei.Marcos.TRE.Db.Eleitor;
 using Frei.Marcos.TRE.Db.Urna;
+using Frei.Marcos.TRE.Telas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -154,6 +155,13 @@ namespace Frei.Marcos.TRE
             {
                 MessageBox.Show($"Ocorreu um erro inexperado: {ex.Message}", "Urna - Informática A", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Votos frm = new Votos();
+            Hide();
+            frm.Show();
         }
     }
 }
