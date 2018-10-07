@@ -28,7 +28,10 @@ namespace Urna.Telas
         private void Votar()
         {
             voto.fk_voto_eleitor = UrnaControl.id_Eleitor;
-            voto.fk_voto_candidato = Convert.ToInt32(n);
+
+            CandidatoBusiness business = new CandidatoBusiness();
+            CandidatoDTO candidato = business.ConsultarCandidadoPorNumero(Convert.ToInt32(n));
+            voto.fk_voto_candidato = candidato.id_candidato;
 
             db.Votar(voto);
             Hide();
