@@ -91,5 +91,16 @@ namespace Frei.Marcos.TRE
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
