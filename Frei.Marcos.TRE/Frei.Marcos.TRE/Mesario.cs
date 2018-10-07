@@ -92,14 +92,15 @@ namespace Frei.Marcos.TRE
 
         }
 
-        private void txtUrna_KeyPress(object sender, KeyPressEventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-                e.Handled = true;
+            Close();
+
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
