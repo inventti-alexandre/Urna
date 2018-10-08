@@ -55,6 +55,10 @@
     <Compile Include="Db\Urna\UrnaBusiness.cs" />
     <Compile Include="Db\Urna\UrnaDatabase.cs" />
     <Compile Include="Db\Urna\UrnaDTO.cs" />
+    <Compile Include="Db\Voto\CandidatoDTO.cs" />
+    <Compile Include="Db\Voto\VotoDatabase.cs" />
+    <Compile Include="Db\Voto\VotoDTO.cs" />
+    <Compile Include="Plugin\ImagemPlugin.cs" />
     <Compile Include="Telas\CadastrarEleitor.cs">
       <SubType>Form</SubType>
     </Compile>

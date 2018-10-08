@@ -33,10 +33,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblPresidente = new System.Windows.Forms.Label();
+            this.lblGovernador = new System.Windows.Forms.Label();
+            this.lbl1Senador = new System.Windows.Forms.Label();
+            this.lbl2Senador = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -58,48 +58,48 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.ftVicePresidente = new System.Windows.Forms.PictureBox();
+            this.ftPresidente = new System.Windows.Forms.PictureBox();
+            this.lblVicePresidente = new System.Windows.Forms.Label();
+            this.lblViceGovernador = new System.Windows.Forms.Label();
+            this.ftGovernador = new System.Windows.Forms.PictureBox();
+            this.ft1Senador = new System.Windows.Forms.PictureBox();
+            this.ft2Senador = new System.Windows.Forms.PictureBox();
+            this.ftViceGovernador = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.btnAtualizar = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.ftDeputadoEstadual = new System.Windows.Forms.PictureBox();
+            this.ftDeputadoFederal = new System.Windows.Forms.PictureBox();
+            this.lblDeputadoFederal = new System.Windows.Forms.Label();
+            this.lblDeputadoEstadual = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.lbl2Senador2Suplent = new System.Windows.Forms.Label();
+            this.lbl2Senador1Suplent = new System.Windows.Forms.Label();
+            this.lbl1Senador2Suplent = new System.Windows.Forms.Label();
+            this.lbl1Senador1Suplent = new System.Windows.Forms.Label();
+            this.ft2Senador2Suplente = new System.Windows.Forms.PictureBox();
+            this.ft1Senador2Suplente = new System.Windows.Forms.PictureBox();
+            this.ft2Senador1Suplente = new System.Windows.Forms.PictureBox();
+            this.ft1Senador1Suplente = new System.Windows.Forms.PictureBox();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftVicePresidente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftPresidente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftGovernador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft1Senador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft2Senador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftViceGovernador)).BeginInit();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftDeputadoEstadual)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftDeputadoFederal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft2Senador2Suplente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft1Senador2Suplente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft2Senador1Suplente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft1Senador1Suplente)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -143,46 +143,46 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "2° Senador:";
             // 
-            // label7
+            // lblPresidente
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(326, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(164, 36);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Presidente";
+            this.lblPresidente.AutoSize = true;
+            this.lblPresidente.BackColor = System.Drawing.Color.Transparent;
+            this.lblPresidente.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPresidente.Location = new System.Drawing.Point(326, 54);
+            this.lblPresidente.Name = "lblPresidente";
+            this.lblPresidente.Size = new System.Drawing.Size(164, 36);
+            this.lblPresidente.TabIndex = 10;
+            this.lblPresidente.Text = "Presidente";
             // 
-            // label8
+            // lblGovernador
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(419, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 30);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Governador";
+            this.lblGovernador.AutoSize = true;
+            this.lblGovernador.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGovernador.Location = new System.Drawing.Point(419, 192);
+            this.lblGovernador.Name = "lblGovernador";
+            this.lblGovernador.Size = new System.Drawing.Size(158, 30);
+            this.lblGovernador.TabIndex = 11;
+            this.lblGovernador.Text = "Governador";
             // 
-            // label9
+            // lbl1Senador
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(373, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 24);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "1° Senador";
+            this.lbl1Senador.AutoSize = true;
+            this.lbl1Senador.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1Senador.Location = new System.Drawing.Point(373, 24);
+            this.lbl1Senador.Name = "lbl1Senador";
+            this.lbl1Senador.Size = new System.Drawing.Size(121, 24);
+            this.lbl1Senador.TabIndex = 12;
+            this.lbl1Senador.Text = "1° Senador";
             // 
-            // label10
+            // lbl2Senador
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(373, 104);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 24);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "2° Senador";
+            this.lbl2Senador.AutoSize = true;
+            this.lbl2Senador.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2Senador.Location = new System.Drawing.Point(373, 104);
+            this.lbl2Senador.Name = "lbl2Senador";
+            this.lbl2Senador.Size = new System.Drawing.Size(121, 24);
+            this.lbl2Senador.TabIndex = 13;
+            this.lbl2Senador.Text = "2° Senador";
             // 
             // panel17
             // 
@@ -363,103 +363,104 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel18.Controls.Add(this.pictureBox8);
-            this.panel18.Controls.Add(this.pictureBox1);
-            this.panel18.Controls.Add(this.label13);
-            this.panel18.Controls.Add(this.label7);
+            this.panel18.Controls.Add(this.ftVicePresidente);
+            this.panel18.Controls.Add(this.ftPresidente);
+            this.panel18.Controls.Add(this.lblVicePresidente);
+            this.panel18.Controls.Add(this.lblPresidente);
             this.panel18.Controls.Add(this.label1);
             this.panel18.Location = new System.Drawing.Point(103, 0);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(856, 150);
             this.panel18.TabIndex = 45;
             // 
-            // pictureBox8
+            // ftVicePresidente
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(679, 58);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(59, 72);
-            this.pictureBox8.TabIndex = 15;
-            this.pictureBox8.TabStop = false;
+            this.ftVicePresidente.Location = new System.Drawing.Point(732, 58);
+            this.ftVicePresidente.Name = "ftVicePresidente";
+            this.ftVicePresidente.Size = new System.Drawing.Size(59, 72);
+            this.ftVicePresidente.TabIndex = 15;
+            this.ftVicePresidente.TabStop = false;
             // 
-            // pictureBox1
+            // ftPresidente
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(560, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(113, 115);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.ftPresidente.Location = new System.Drawing.Point(613, 15);
+            this.ftPresidente.Name = "ftPresidente";
+            this.ftPresidente.Size = new System.Drawing.Size(113, 115);
+            this.ftPresidente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ftPresidente.TabIndex = 14;
+            this.ftPresidente.TabStop = false;
             // 
-            // label13
+            // lblVicePresidente
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(378, 94);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 24);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "Vice";
+            this.lblVicePresidente.AutoSize = true;
+            this.lblVicePresidente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVicePresidente.Location = new System.Drawing.Point(378, 94);
+            this.lblVicePresidente.Name = "lblVicePresidente";
+            this.lblVicePresidente.Size = new System.Drawing.Size(56, 24);
+            this.lblVicePresidente.TabIndex = 13;
+            this.lblVicePresidente.Text = "Vice";
             // 
-            // label14
+            // lblViceGovernador
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(470, 222);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 24);
-            this.label14.TabIndex = 46;
-            this.label14.Text = "Vice";
+            this.lblViceGovernador.AutoSize = true;
+            this.lblViceGovernador.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViceGovernador.Location = new System.Drawing.Point(470, 222);
+            this.lblViceGovernador.Name = "lblViceGovernador";
+            this.lblViceGovernador.Size = new System.Drawing.Size(56, 24);
+            this.lblViceGovernador.TabIndex = 46;
+            this.lblViceGovernador.Text = "Vice";
             // 
-            // pictureBox2
+            // ftGovernador
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(683, 158);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 98);
-            this.pictureBox2.TabIndex = 47;
-            this.pictureBox2.TabStop = false;
+            this.ftGovernador.Location = new System.Drawing.Point(717, 156);
+            this.ftGovernador.Name = "ftGovernador";
+            this.ftGovernador.Size = new System.Drawing.Size(82, 98);
+            this.ftGovernador.TabIndex = 47;
+            this.ftGovernador.TabStop = false;
             // 
-            // pictureBox3
+            // ft1Senador
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(653, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(53, 60);
-            this.pictureBox3.TabIndex = 48;
-            this.pictureBox3.TabStop = false;
+            this.ft1Senador.Location = new System.Drawing.Point(665, 20);
+            this.ft1Senador.Name = "ft1Senador";
+            this.ft1Senador.Size = new System.Drawing.Size(53, 60);
+            this.ft1Senador.TabIndex = 48;
+            this.ft1Senador.TabStop = false;
             // 
-            // pictureBox4
+            // ft2Senador
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(653, 86);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(53, 60);
-            this.pictureBox4.TabIndex = 49;
-            this.pictureBox4.TabStop = false;
+            this.ft2Senador.Location = new System.Drawing.Point(665, 100);
+            this.ft2Senador.Name = "ft2Senador";
+            this.ft2Senador.Size = new System.Drawing.Size(53, 60);
+            this.ft2Senador.TabIndex = 49;
+            this.ft2Senador.TabStop = false;
             // 
-            // pictureBox9
+            // ftViceGovernador
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(771, 192);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 64);
-            this.pictureBox9.TabIndex = 52;
-            this.pictureBox9.TabStop = false;
+            this.ftViceGovernador.Location = new System.Drawing.Point(805, 190);
+            this.ftViceGovernador.Name = "ftViceGovernador";
+            this.ftViceGovernador.Size = new System.Drawing.Size(50, 64);
+            this.ftViceGovernador.TabIndex = 52;
+            this.ftViceGovernador.TabStop = false;
             // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.White;
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel19.Controls.Add(this.panel20);
-            this.panel19.Controls.Add(this.label17);
-            this.panel19.Controls.Add(this.label18);
-            this.panel19.Controls.Add(this.label16);
-            this.panel19.Controls.Add(this.label15);
-            this.panel19.Controls.Add(this.pictureBox12);
-            this.panel19.Controls.Add(this.pictureBox13);
-            this.panel19.Controls.Add(this.pictureBox10);
-            this.panel19.Controls.Add(this.pictureBox11);
+            this.panel19.Controls.Add(this.lbl2Senador2Suplent);
+            this.panel19.Controls.Add(this.lbl2Senador1Suplent);
+            this.panel19.Controls.Add(this.lbl1Senador2Suplent);
+            this.panel19.Controls.Add(this.lbl1Senador1Suplent);
+            this.panel19.Controls.Add(this.ft2Senador2Suplente);
+            this.panel19.Controls.Add(this.ft1Senador2Suplente);
+            this.panel19.Controls.Add(this.ft2Senador1Suplente);
+            this.panel19.Controls.Add(this.ft1Senador1Suplente);
             this.panel19.Controls.Add(this.label3);
             this.panel19.Controls.Add(this.label4);
-            this.panel19.Controls.Add(this.label9);
-            this.panel19.Controls.Add(this.pictureBox4);
-            this.panel19.Controls.Add(this.label10);
-            this.panel19.Controls.Add(this.pictureBox3);
+            this.panel19.Controls.Add(this.lbl1Senador);
+            this.panel19.Controls.Add(this.ft2Senador);
+            this.panel19.Controls.Add(this.lbl2Senador);
+            this.panel19.Controls.Add(this.ft1Senador);
             this.panel19.Location = new System.Drawing.Point(50, 278);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(921, 381);
@@ -470,10 +471,10 @@
             this.panel20.BackColor = System.Drawing.Color.White;
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel20.Controls.Add(this.btnAtualizar);
-            this.panel20.Controls.Add(this.pictureBox5);
-            this.panel20.Controls.Add(this.pictureBox6);
-            this.panel20.Controls.Add(this.label12);
-            this.panel20.Controls.Add(this.label11);
+            this.panel20.Controls.Add(this.ftDeputadoEstadual);
+            this.panel20.Controls.Add(this.ftDeputadoFederal);
+            this.panel20.Controls.Add(this.lblDeputadoFederal);
+            this.panel20.Controls.Add(this.lblDeputadoEstadual);
             this.panel20.Controls.Add(this.label5);
             this.panel20.Controls.Add(this.label6);
             this.panel20.Location = new System.Drawing.Point(-64, 180);
@@ -493,42 +494,43 @@
             this.btnAtualizar.TabIndex = 59;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
-            // pictureBox5
+            // ftDeputadoEstadual
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(726, 72);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 51);
-            this.pictureBox5.TabIndex = 58;
-            this.pictureBox5.TabStop = false;
+            this.ftDeputadoEstadual.Location = new System.Drawing.Point(727, 70);
+            this.ftDeputadoEstadual.Name = "ftDeputadoEstadual";
+            this.ftDeputadoEstadual.Size = new System.Drawing.Size(42, 51);
+            this.ftDeputadoEstadual.TabIndex = 58;
+            this.ftDeputadoEstadual.TabStop = false;
             // 
-            // pictureBox6
+            // ftDeputadoFederal
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(726, 15);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 51);
-            this.pictureBox6.TabIndex = 57;
-            this.pictureBox6.TabStop = false;
+            this.ftDeputadoFederal.Location = new System.Drawing.Point(727, 13);
+            this.ftDeputadoFederal.Name = "ftDeputadoFederal";
+            this.ftDeputadoFederal.Size = new System.Drawing.Size(42, 51);
+            this.ftDeputadoFederal.TabIndex = 57;
+            this.ftDeputadoFederal.TabStop = false;
             // 
-            // label12
+            // lblDeputadoFederal
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(441, 28);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(199, 24);
-            this.label12.TabIndex = 55;
-            this.label12.Text = "Deputado Federal";
+            this.lblDeputadoFederal.AutoSize = true;
+            this.lblDeputadoFederal.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeputadoFederal.Location = new System.Drawing.Point(441, 28);
+            this.lblDeputadoFederal.Name = "lblDeputadoFederal";
+            this.lblDeputadoFederal.Size = new System.Drawing.Size(199, 24);
+            this.lblDeputadoFederal.TabIndex = 55;
+            this.lblDeputadoFederal.Text = "Deputado Federal";
             // 
-            // label11
+            // lblDeputadoEstadual
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(441, 85);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(208, 24);
-            this.label11.TabIndex = 56;
-            this.label11.Text = "Deputado Estadual";
+            this.lblDeputadoEstadual.AutoSize = true;
+            this.lblDeputadoEstadual.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeputadoEstadual.Location = new System.Drawing.Point(441, 85);
+            this.lblDeputadoEstadual.Name = "lblDeputadoEstadual";
+            this.lblDeputadoEstadual.Size = new System.Drawing.Size(208, 24);
+            this.lblDeputadoEstadual.TabIndex = 56;
+            this.lblDeputadoEstadual.Text = "Deputado Estadual";
             // 
             // label5
             // 
@@ -550,77 +552,77 @@
             this.label6.TabIndex = 54;
             this.label6.Text = "Deputado Estadual:";
             // 
-            // label17
+            // lbl2Senador2Suplent
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(390, 146);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(79, 17);
-            this.label17.TabIndex = 60;
-            this.label17.Text = "2° Suplente";
+            this.lbl2Senador2Suplent.AutoSize = true;
+            this.lbl2Senador2Suplent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2Senador2Suplent.Location = new System.Drawing.Point(390, 146);
+            this.lbl2Senador2Suplent.Name = "lbl2Senador2Suplent";
+            this.lbl2Senador2Suplent.Size = new System.Drawing.Size(79, 17);
+            this.lbl2Senador2Suplent.TabIndex = 60;
+            this.lbl2Senador2Suplent.Text = "2° Suplente";
             // 
-            // label18
+            // lbl2Senador1Suplent
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(390, 129);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(79, 17);
-            this.label18.TabIndex = 59;
-            this.label18.Text = "1° Suplente";
+            this.lbl2Senador1Suplent.AutoSize = true;
+            this.lbl2Senador1Suplent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2Senador1Suplent.Location = new System.Drawing.Point(390, 129);
+            this.lbl2Senador1Suplent.Name = "lbl2Senador1Suplent";
+            this.lbl2Senador1Suplent.Size = new System.Drawing.Size(79, 17);
+            this.lbl2Senador1Suplent.TabIndex = 59;
+            this.lbl2Senador1Suplent.Text = "1° Suplente";
             // 
-            // label16
+            // lbl1Senador2Suplent
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(390, 65);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 17);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "2° Suplente";
+            this.lbl1Senador2Suplent.AutoSize = true;
+            this.lbl1Senador2Suplent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1Senador2Suplent.Location = new System.Drawing.Point(390, 65);
+            this.lbl1Senador2Suplent.Name = "lbl1Senador2Suplent";
+            this.lbl1Senador2Suplent.Size = new System.Drawing.Size(79, 17);
+            this.lbl1Senador2Suplent.TabIndex = 58;
+            this.lbl1Senador2Suplent.Text = "2° Suplente";
             // 
-            // label15
+            // lbl1Senador1Suplent
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(390, 48);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 17);
-            this.label15.TabIndex = 57;
-            this.label15.Text = "1° Suplente";
+            this.lbl1Senador1Suplent.AutoSize = true;
+            this.lbl1Senador1Suplent.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1Senador1Suplent.Location = new System.Drawing.Point(390, 48);
+            this.lbl1Senador1Suplent.Name = "lbl1Senador1Suplent";
+            this.lbl1Senador1Suplent.Size = new System.Drawing.Size(79, 17);
+            this.lbl1Senador1Suplent.TabIndex = 57;
+            this.lbl1Senador1Suplent.Text = "1° Suplente";
             // 
-            // pictureBox12
+            // ft2Senador2Suplente
             // 
-            this.pictureBox12.Location = new System.Drawing.Point(753, 104);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(35, 43);
-            this.pictureBox12.TabIndex = 56;
-            this.pictureBox12.TabStop = false;
+            this.ft2Senador2Suplente.Location = new System.Drawing.Point(765, 118);
+            this.ft2Senador2Suplente.Name = "ft2Senador2Suplente";
+            this.ft2Senador2Suplente.Size = new System.Drawing.Size(35, 43);
+            this.ft2Senador2Suplente.TabIndex = 56;
+            this.ft2Senador2Suplente.TabStop = false;
             // 
-            // pictureBox13
+            // ft1Senador2Suplente
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(753, 23);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(35, 43);
-            this.pictureBox13.TabIndex = 55;
-            this.pictureBox13.TabStop = false;
+            this.ft1Senador2Suplente.Location = new System.Drawing.Point(765, 37);
+            this.ft1Senador2Suplente.Name = "ft1Senador2Suplente";
+            this.ft1Senador2Suplente.Size = new System.Drawing.Size(35, 43);
+            this.ft1Senador2Suplente.TabIndex = 55;
+            this.ft1Senador2Suplente.TabStop = false;
             // 
-            // pictureBox10
+            // ft2Senador1Suplente
             // 
-            this.pictureBox10.Location = new System.Drawing.Point(712, 104);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(35, 43);
-            this.pictureBox10.TabIndex = 54;
-            this.pictureBox10.TabStop = false;
+            this.ft2Senador1Suplente.Location = new System.Drawing.Point(724, 118);
+            this.ft2Senador1Suplente.Name = "ft2Senador1Suplente";
+            this.ft2Senador1Suplente.Size = new System.Drawing.Size(35, 43);
+            this.ft2Senador1Suplente.TabIndex = 54;
+            this.ft2Senador1Suplente.TabStop = false;
             // 
-            // pictureBox11
+            // ft1Senador1Suplente
             // 
-            this.pictureBox11.Location = new System.Drawing.Point(712, 23);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(35, 43);
-            this.pictureBox11.TabIndex = 53;
-            this.pictureBox11.TabStop = false;
+            this.ft1Senador1Suplente.Location = new System.Drawing.Point(724, 37);
+            this.ft1Senador1Suplente.Name = "ft1Senador1Suplente";
+            this.ft1Senador1Suplente.Size = new System.Drawing.Size(35, 43);
+            this.ft1Senador1Suplente.TabIndex = 53;
+            this.ft1Senador1Suplente.TabStop = false;
             // 
             // Votos
             // 
@@ -628,9 +630,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(957, 659);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.ftViceGovernador);
+            this.Controls.Add(this.ftGovernador);
+            this.Controls.Add(this.lblViceGovernador);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel11);
@@ -648,7 +650,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel17);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblGovernador);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel19);
@@ -657,27 +659,28 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Votos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Votos";
             this.panel17.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftVicePresidente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftPresidente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftGovernador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft1Senador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft2Senador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftViceGovernador)).EndInit();
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftDeputadoEstadual)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ftDeputadoFederal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft2Senador2Suplente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft1Senador2Suplente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft2Senador1Suplente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ft1Senador1Suplente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -688,10 +691,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblPresidente;
+        private System.Windows.Forms.Label lblGovernador;
+        private System.Windows.Forms.Label lbl1Senador;
+        private System.Windows.Forms.Label lbl2Senador;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
@@ -710,33 +713,33 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox ftPresidente;
+        private System.Windows.Forms.Label lblVicePresidente;
+        private System.Windows.Forms.Label lblViceGovernador;
+        private System.Windows.Forms.PictureBox ftGovernador;
+        private System.Windows.Forms.PictureBox ft1Senador;
+        private System.Windows.Forms.PictureBox ft2Senador;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox ftVicePresidente;
+        private System.Windows.Forms.PictureBox ftViceGovernador;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Button btnAtualizar;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox ftDeputadoEstadual;
+        private System.Windows.Forms.PictureBox ftDeputadoFederal;
+        private System.Windows.Forms.Label lblDeputadoFederal;
+        private System.Windows.Forms.Label lblDeputadoEstadual;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Label lbl2Senador2Suplent;
+        private System.Windows.Forms.Label lbl2Senador1Suplent;
+        private System.Windows.Forms.Label lbl1Senador2Suplent;
+        private System.Windows.Forms.Label lbl1Senador1Suplent;
+        private System.Windows.Forms.PictureBox ft2Senador2Suplente;
+        private System.Windows.Forms.PictureBox ft1Senador2Suplente;
+        private System.Windows.Forms.PictureBox ft2Senador1Suplente;
+        private System.Windows.Forms.PictureBox ft1Senador1Suplente;
     }
 }
