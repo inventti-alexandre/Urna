@@ -38,11 +38,21 @@ namespace Frei.Marcos.TRE.Db.Urna
                 bool situacao = reader.GetBoolean("ds_situacao");
 
                 if (situacao == true)
+                {
+                    reader.Close();
                     return false;
+                }
                 else
+                {
+                    reader.Close();
                     return true;
+                }
             }
-            else return false;
+            else
+            {
+                reader.Close();
+                return false;
+            }
         }
     }
 }

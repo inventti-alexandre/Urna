@@ -13,5 +13,6 @@ namespace Frei.Marcos.TRE.Db.Voto
         public string ds_cargo { get; set; }
         public int num_idade { get; set; }
         public int numeroDeVotos { get; set; }
+        public int nr_candidato { get; set; }
     }
 }
