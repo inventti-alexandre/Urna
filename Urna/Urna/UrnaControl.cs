@@ -8,7 +8,7 @@ namespace Urna
 {
     class UrnaControl
     {
-        static public int Id = 2;
+        static public int Id = 5;
         static public int id_Eleitor { get; set; }
     }
 }
