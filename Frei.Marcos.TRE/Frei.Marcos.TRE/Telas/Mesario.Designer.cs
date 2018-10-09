@@ -247,7 +247,6 @@
             this.txtUrna.Name = "txtUrna";
             this.txtUrna.Size = new System.Drawing.Size(255, 22);
             this.txtUrna.TabIndex = 8;
-            this.txtUrna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // panel4
             // 
