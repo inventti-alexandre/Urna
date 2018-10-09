@@ -41,6 +41,7 @@ namespace Urna.Telas
                 voto.fk_voto_candidato = candidato.id_candidato;
 
             db.Votar(voto);
+            UrnaControl.senador = voto.fk_voto_candidato;
             Hide();
             frm.ShowDialog();
             Close();

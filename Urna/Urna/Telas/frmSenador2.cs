@@ -35,8 +35,11 @@ namespace Urna.Telas
 
             if (lblVotoB.Visible == true)
                 voto.fk_voto_candidato = 3;
-            else if (lblVotoN.Visible == true)
+            else if (lblVotoN.Visible == true || UrnaControl.senador == voto.fk_voto_candidato)
+            {
+                lblVotoN.Visible = true;
                 voto.fk_voto_candidato = 4;
+            }
             else
                 voto.fk_voto_candidato = candidato.id_candidato;
 

@@ -10,5 +10,6 @@ namespace Urna
     {
         static public int Id = 5;
         static public int id_Eleitor { get; set; }
+        static public int senador { get; set; }
     }
 }
