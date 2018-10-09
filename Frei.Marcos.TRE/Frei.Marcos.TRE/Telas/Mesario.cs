@@ -36,7 +36,7 @@ namespace Frei.Marcos.TRE
                 txtNome.Text = cripto.Descriptografar("planalto", eleitor.nm_nome);
                 dtpNasc.Value = eleitor.dt_nascimento;
                 txtRG.Text = cripto.Descriptografar("planalto", eleitor.nr_rg);
-                txtMun.Text = cripto.Descriptografar("planalto", eleitor.nm_municipio);
+                txtMun.Text = eleitor.nm_municipio;
                 txtUF.Text = cripto.Descriptografar("planalto", eleitor.nm_uf);
                 txtZona.Text = eleitor.nr_zona.ToString();
             }
@@ -117,7 +117,7 @@ namespace Frei.Marcos.TRE
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -137,11 +137,17 @@ namespace Frei.Marcos.TRE
 
                 if (db.VerificarUrna(Convert.ToInt32(txtUrna.Text)) == true)
                 {
+                    if (db.VerificarEleitor(eleitor.id_eleitor) == false)
+                        throw new ArgumentException("Esse eleitor já votou.");
+
                     UrnaDTO dto = new UrnaDTO();
                     dto.id_urna = Convert.ToInt32(txtUrna.Text);
                     dto.id_eleitor = eleitor.id_eleitor;
 
+                    int idEleitor = eleitor.id_eleitor;
+
                     db.LiberarUrna(dto);
+                    db.AtualizarEleitor(idEleitor);
                     MessageBox.Show("Urna liberada!", "Urna - Informática A", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -162,6 +168,11 @@ namespace Frei.Marcos.TRE
             Votos frm = new Votos();
             Hide();
             frm.Show();
+        }
+
+        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

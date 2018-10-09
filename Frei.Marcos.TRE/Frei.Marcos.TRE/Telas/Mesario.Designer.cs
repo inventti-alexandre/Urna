@@ -71,7 +71,7 @@
             this.panel2.Location = new System.Drawing.Point(10, 82);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(782, 56);
-            this.panel2.TabIndex = 16;
+            this.panel2.TabIndex = 0;
             // 
             // btnBuscar
             // 
@@ -125,16 +125,19 @@
             this.txtNome.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(128, 24);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(239, 22);
-            this.txtNome.TabIndex = 18;
+            this.txtNome.Size = new System.Drawing.Size(268, 22);
+            this.txtNome.TabIndex = 2;
+            this.txtNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // dtpNasc
             // 
+            this.dtpNasc.Enabled = false;
             this.dtpNasc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNasc.Location = new System.Drawing.Point(128, 61);
             this.dtpNasc.Name = "dtpNasc";
-            this.dtpNasc.Size = new System.Drawing.Size(239, 22);
-            this.dtpNasc.TabIndex = 20;
+            this.dtpNasc.Size = new System.Drawing.Size(268, 22);
+            this.dtpNasc.TabIndex = 3;
+            this.dtpNasc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label7
             // 
@@ -154,8 +157,9 @@
             this.txtRG.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRG.Location = new System.Drawing.Point(128, 106);
             this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(239, 22);
-            this.txtRG.TabIndex = 22;
+            this.txtRG.Size = new System.Drawing.Size(268, 22);
+            this.txtRG.TabIndex = 4;
+            this.txtRG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label5
             // 
@@ -163,7 +167,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(389, 26);
+            this.label5.Location = new System.Drawing.Point(402, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 20);
             this.label5.TabIndex = 23;
@@ -173,10 +177,11 @@
             // txtMun
             // 
             this.txtMun.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMun.Location = new System.Drawing.Point(476, 26);
+            this.txtMun.Location = new System.Drawing.Point(489, 26);
             this.txtMun.Name = "txtMun";
-            this.txtMun.Size = new System.Drawing.Size(239, 22);
-            this.txtMun.TabIndex = 24;
+            this.txtMun.Size = new System.Drawing.Size(255, 22);
+            this.txtMun.TabIndex = 5;
+            this.txtMun.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label6
             // 
@@ -184,7 +189,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(443, 65);
+            this.label6.Location = new System.Drawing.Point(456, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(27, 20);
             this.label6.TabIndex = 25;
@@ -194,10 +199,11 @@
             // txtUF
             // 
             this.txtUF.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUF.Location = new System.Drawing.Point(476, 63);
+            this.txtUF.Location = new System.Drawing.Point(489, 63);
             this.txtUF.Name = "txtUF";
-            this.txtUF.Size = new System.Drawing.Size(37, 22);
-            this.txtUF.TabIndex = 26;
+            this.txtUF.Size = new System.Drawing.Size(53, 22);
+            this.txtUF.TabIndex = 6;
+            this.txtUF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label8
             // 
@@ -217,8 +223,9 @@
             this.txtZona.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtZona.Location = new System.Drawing.Point(607, 63);
             this.txtZona.Name = "txtZona";
-            this.txtZona.Size = new System.Drawing.Size(108, 22);
-            this.txtZona.TabIndex = 28;
+            this.txtZona.Size = new System.Drawing.Size(137, 22);
+            this.txtZona.TabIndex = 7;
+            this.txtZona.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // label9
             // 
@@ -226,7 +233,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(426, 106);
+            this.label9.Location = new System.Drawing.Point(439, 108);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 20);
             this.label9.TabIndex = 27;
@@ -236,10 +243,11 @@
             // txtUrna
             // 
             this.txtUrna.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUrna.Location = new System.Drawing.Point(476, 108);
+            this.txtUrna.Location = new System.Drawing.Point(489, 108);
             this.txtUrna.Name = "txtUrna";
-            this.txtUrna.Size = new System.Drawing.Size(239, 22);
-            this.txtUrna.TabIndex = 28;
+            this.txtUrna.Size = new System.Drawing.Size(255, 22);
+            this.txtUrna.TabIndex = 8;
+            this.txtUrna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNome_KeyPress);
             // 
             // panel4
             // 
@@ -310,7 +318,7 @@
             this.panel1.Location = new System.Drawing.Point(10, 131);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(795, 200);
-            this.panel1.TabIndex = 37;
+            this.panel1.TabIndex = 1;
             // 
             // label10
             // 
@@ -345,7 +353,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(584, 146);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(179, 29);
-            this.btnCancelar.TabIndex = 31;
+            this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
@@ -359,7 +367,7 @@
             this.btnConfirmar.Location = new System.Drawing.Point(372, 146);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(179, 29);
-            this.btnConfirmar.TabIndex = 30;
+            this.btnConfirmar.TabIndex = 9;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click_1);

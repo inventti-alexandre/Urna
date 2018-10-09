@@ -45,12 +45,12 @@ namespace Frei.Marcos.TRE
             try
             {
                 EleitorDTO dto = new EleitorDTO();
-                dto.nm_municipio = Criptografia(txtMun.Text);
-                dto.nm_nome = Criptografia(txtNome.Text);
-                dto.nm_uf = Criptografia(txtUF.Text);
-                dto.nr_inscricao = Criptografia(txtNinc.Text);
-                dto.nr_rg = Criptografia(txtRG.Text);
-                dto.nr_zona = Convert.ToInt32(txtZona.Text);
+                dto.nm_nome = txtNome.Text != string.Empty ? Criptografia(txtNome.Text).Trim() : throw new ArgumentException("Nome não pode ser nulo.");
+                dto.nm_uf = txtUF.Text != string.Empty ? Criptografia(txtUF.Text) : throw new ArgumentException("UF não pode ser nulo.");
+                dto.nr_inscricao = txtNinc.Text != string.Empty ? Criptografia(txtNinc.Text) : throw new ArgumentException("Número de Inscrição não pode ser nulo.");
+                dto.nr_rg = txtRG.Text != string.Empty ? Criptografia(txtRG.Text) : throw new ArgumentException("RG não pode ser nulo.");
+                dto.nr_zona = txtZona.Text != string.Empty ? Convert.ToInt32(txtZona.Text) : throw new ArgumentException("Zona não pode ser nulo.");
+                dto.nm_municipio = txtMun.Text != string.Empty ? txtMun.Text.Trim() : throw new ArgumentException("Municipio não pode ser nulo.");
 
                 TimeSpan idade = DateTime.Now - dtpNasc.Value;
                 dto.dt_nascimento = (idade.Days / 365) >= 16 ? dtpNasc.Value : throw new ArgumentException("Você deve ter no mínimo 16 anos para tirar o título de eleitor.");
@@ -75,6 +75,50 @@ namespace Frei.Marcos.TRE
             Mesario frm = new Mesario();
             Hide();
             frm.Show();
+        }
+
+        private void txtZona_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void txtUF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void txtMun_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
+
+        private void txtNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void txtNinc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
         }
     }
 }

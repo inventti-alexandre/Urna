@@ -12,8 +12,8 @@ namespace Frei.Marcos.TRE.Db.Eleitor
     {
         public void CadastrarEleitor(EleitorDTO dto)
         {
-            string script = @"INSERT tb_eleitor(nm_nome, dt_nascimento, nr_inscricao, nr_zona, nm_municipio, nm_uf, nr_rg)
-                                         VALUES(@nm_nome, @dt_nascimento, @nr_inscricao, @nr_zona, @nm_municipio, @nm_uf, @nr_rg)";
+            string script = @"INSERT tb_eleitor(nm_nome, dt_nascimento, nr_inscricao, nr_zona, nm_municipio, nm_uf, nr_rg, ds_situacao)
+                                         VALUES(@nm_nome, @dt_nascimento, @nr_inscricao, @nr_zona, @nm_municipio, @nm_uf, @nr_rg, @ds_situacao)";
 
             List<MySqlParameter> parms = new List<MySqlParameter>();
             parms.Add(new MySqlParameter("nm_nome", dto.nm_nome));
@@ -23,6 +23,7 @@ namespace Frei.Marcos.TRE.Db.Eleitor
             parms.Add(new MySqlParameter("nm_municipio", dto.nm_municipio));
             parms.Add(new MySqlParameter("nm_uf", dto.nm_uf));
             parms.Add(new MySqlParameter("nr_rg", dto.nr_rg));
+            parms.Add(new MySqlParameter("ds_situacao", false));
 
             Database db = new Database();
             db.ExecuteInsertScript(script, parms);

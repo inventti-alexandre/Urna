@@ -52,6 +52,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblVotoN = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNum1 = new System.Windows.Forms.TextBox();
@@ -72,7 +73,6 @@
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblVotoB = new System.Windows.Forms.Label();
-            this.lblVotoN = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -398,6 +398,17 @@
             this.panel2.Size = new System.Drawing.Size(446, 339);
             this.panel2.TabIndex = 0;
             // 
+            // lblVotoN
+            // 
+            this.lblVotoN.AutoSize = true;
+            this.lblVotoN.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVotoN.Location = new System.Drawing.Point(81, 80);
+            this.lblVotoN.Name = "lblVotoN";
+            this.lblVotoN.Size = new System.Drawing.Size(157, 33);
+            this.lblVotoN.TabIndex = 47;
+            this.lblVotoN.Text = "Votar Nulo";
+            this.lblVotoN.Visible = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -590,17 +601,6 @@
             this.lblVotoB.Text = "Votar em Branco";
             this.lblVotoB.Visible = false;
             // 
-            // lblVotoN
-            // 
-            this.lblVotoN.AutoSize = true;
-            this.lblVotoN.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVotoN.Location = new System.Drawing.Point(81, 80);
-            this.lblVotoN.Name = "lblVotoN";
-            this.lblVotoN.Size = new System.Drawing.Size(157, 33);
-            this.lblVotoN.TabIndex = 47;
-            this.lblVotoN.Text = "Votar Nulo";
-            this.lblVotoN.Visible = false;
-            // 
             // frmSenador2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -609,6 +609,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSenador2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSenador2";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
